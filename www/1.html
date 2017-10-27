@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hello Baby</title>
+
+    </head><br><br>
+    <body bgcolor="sky blue">
+   <center><h1>All Common Animal Names</h1><br>
+
+   
+   <p><b>Here you can save common animal name you know.. Enjoy it. Save it!<b></p></center><br><br>
+
+    
+    <center><input type="text" id="header" name="header" placeholder="Enter animal name here" style="text-align: center; width: 300px; height:40px;"><br><br>
+
+
+<p><button onclick="action()" type="button">Save me!</button></p>
+<p><button onclick="action2()" type="button">Remember me!</button></p>
+<p><button onclick="action3()" type="button">Clear!</button>
+<center> <button><A href="index.html"> Home </button>
+       </center> 
+        
+<script>
+    function action() {
+        window.localStorage['header'] = document.getElementById('header').value;
+    }
+
+    function action2() {
+        document.getElementById('header').value = window.localStorage['header'];
+    }
+     function action3() {
+        window.localStorage['header'] = document.getElementById('header').value;
+
+    }
+</script>
+    </body>
+</html> 
